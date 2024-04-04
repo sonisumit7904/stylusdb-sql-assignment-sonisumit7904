@@ -28,6 +28,7 @@
     "test:18": "jest --testPathPattern=./tests/step-18",
     "test:19": "jest --testPathPattern=./tests/step-19",
     "test:20": "jest --testPathPattern=./tests/step-20",
+    "test:21": "jest --testPathPattern=./tests/step-21",
     "test-verbose": "jest --verbose",
     "server": "node ./src/server.js"
   },
