@@ -317,8 +317,8 @@ test("Parse SQL Query", () => {
     joinTable: null,
     joinType: null,
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -341,8 +341,8 @@ test("Parse SQL Query with WHERE Clause", () => {
     joinTable: null,
     joinType: null,
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -370,8 +370,8 @@ test("Parse SQL Query with Multiple WHERE Clauses", () => {
     joinTable: null,
     joinType: null,
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -389,8 +389,8 @@ test("Parse SQL Query with INNER JOIN", async () => {
     joinType: "INNER",
     joinCondition: { left: "student.id", right: "enrollment.student_id" },
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -408,8 +408,8 @@ test("Parse SQL Query with INNER JOIN and WHERE Clause", async () => {
     joinType: "INNER",
     joinCondition: { left: "student.id", right: "enrollment.student_id" },
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -470,8 +470,8 @@ test("Parse LEFT Join Query Completely", () => {
     joinTable: "enrollment",
     joinCondition: { left: "student.id", right: "enrollment.student_id" },
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -489,8 +489,8 @@ test("Parse LEFT Join Query Completely", () => {
     joinTable: "enrollment",
     joinCondition: { left: "student.id", right: "enrollment.student_id" },
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -508,8 +508,8 @@ test("Parse SQL Query with LEFT JOIN with a WHERE clause filtering the main tabl
     table: "student",
     whereClauses: [{ field: "student.age", operator: ">", value: "22" }],
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -528,8 +528,8 @@ test("Parse SQL Query with LEFT JOIN with a WHERE clause filtering the join tabl
       { field: "enrollment.course", operator: "=", value: "'Physics'" },
     ],
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -547,8 +547,8 @@ test("Parse SQL Query with RIGHT JOIN with a WHERE clause filtering the main tab
     table: "student",
     whereClauses: [{ field: "student.age", operator: "<", value: "25" }],
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -567,8 +567,8 @@ test("Parse SQL Query with RIGHT JOIN with a WHERE clause filtering the join tab
       { field: "enrollment.course", operator: "=", value: "'Chemistry'" },
     ],
     groupByFields: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -583,10 +583,10 @@ test("Parse COUNT Aggregate Query", () => {
     whereClauses: [],
     groupByFields: null,
     hasAggregateWithoutGroupBy: true,
+    orderByFields: null,
     joinCondition: null,
     joinTable: null,
     joinType: null,
-    orderByFields: null,
     limit: null,
     isDistinct: false,
   });
@@ -601,10 +601,10 @@ test("Parse SUM Aggregate Query", () => {
     whereClauses: [],
     groupByFields: null,
     hasAggregateWithoutGroupBy: true,
+    orderByFields: null,
     joinCondition: null,
     joinTable: null,
     joinType: null,
-    orderByFields: null,
     limit: null,
     isDistinct: false,
   });
@@ -619,10 +619,10 @@ test("Parse AVG Aggregate Query", () => {
     whereClauses: [],
     groupByFields: null,
     hasAggregateWithoutGroupBy: true,
+    orderByFields: null,
     joinCondition: null,
     joinTable: null,
     joinType: null,
-    orderByFields: null,
     limit: null,
     isDistinct: false,
   });
@@ -637,10 +637,10 @@ test("Parse MIN Aggregate Query", () => {
     whereClauses: [],
     groupByFields: null,
     hasAggregateWithoutGroupBy: true,
+    orderByFields: null,
     joinCondition: null,
     joinTable: null,
     joinType: null,
-    orderByFields: null,
     limit: null,
     isDistinct: false,
   });
@@ -657,8 +657,8 @@ test("Parse MAX Aggregate Query", () => {
     hasAggregateWithoutGroupBy: true,
     joinCondition: null,
     joinTable: null,
-    joinType: null,
     orderByFields: null,
+    joinType: null,
     limit: null,
     isDistinct: false,
   });
@@ -675,8 +675,8 @@ test("Parse basic GROUP BY query", () => {
     joinType: null,
     joinTable: null,
     joinCondition: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -693,8 +693,8 @@ test("Parse GROUP BY query with WHERE clause", () => {
     joinType: null,
     joinTable: null,
     joinCondition: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -712,8 +712,8 @@ test("Parse GROUP BY query with multiple fields", () => {
     joinType: null,
     joinTable: null,
     joinCondition: null,
-    hasAggregateWithoutGroupBy: false,
     orderByFields: null,
+    hasAggregateWithoutGroupBy: false,
     limit: null,
     isDistinct: false,
   });
@@ -741,161 +741,4 @@ test("Parse GROUP BY query with JOIN and WHERE clauses", () => {
     limit: null,
     isDistinct: false,
   });
-});
-
-test("Execute SQL Query with ORDER BY", async () => {
-  const query = "SELECT name FROM student ORDER BY name ASC";
-  const result = await executeSELECTQuery(query);
-
-  expect(result).toStrictEqual([
-    { name: "Alice" },
-    { name: "Bob" },
-    { name: "Jane" },
-    { name: "John" },
-  ]);
-});
-
-test("Execute SQL Query with ORDER BY and WHERE", async () => {
-  const query = "SELECT name FROM student WHERE age > 24 ORDER BY name DESC";
-  const result = await executeSELECTQuery(query);
-
-  expect(result).toStrictEqual([{ name: "John" }, { name: "Jane" }]);
-});
-test("Execute SQL Query with ORDER BY and GROUP BY", async () => {
-  const query =
-    "SELECT COUNT(id) as count, age FROM student GROUP BY age ORDER BY age DESC";
-  const result = await executeSELECTQuery(query);
-
-  expect(result).toStrictEqual([
-    { age: "30", "COUNT(id) as count": 1 },
-    { age: "25", "COUNT(id) as count": 1 },
-    { age: "24", "COUNT(id) as count": 1 },
-    { age: "22", "COUNT(id) as count": 1 },
-  ]);
-});
-
-test("Execute SQL Query with standard LIMIT clause", async () => {
-  const query = "SELECT id, name FROM student LIMIT 2";
-  const result = await executeSELECTQuery(query);
-  expect(result.length).toEqual(2);
-});
-
-test("Execute SQL Query with LIMIT clause equal to total rows", async () => {
-  const query = "SELECT id, name FROM student LIMIT 4";
-  const result = await executeSELECTQuery(query);
-  expect(result.length).toEqual(4);
-});
-
-test("Execute SQL Query with LIMIT clause exceeding total rows", async () => {
-  const query = "SELECT id, name FROM student LIMIT 10";
-  const result = await executeSELECTQuery(query);
-  expect(result.length).toEqual(4); // Total rows in student.csv
-});
-
-test("Execute SQL Query with LIMIT 0", async () => {
-  const query = "SELECT id, name FROM student LIMIT 0";
-  const result = await executeSELECTQuery(query);
-  expect(result.length).toEqual(0);
-});
-
-test("Execute SQL Query with LIMIT and ORDER BY clause", async () => {
-  const query = "SELECT id, name FROM student ORDER BY age DESC LIMIT 2";
-  const result = await executeSELECTQuery(query);
-  expect(result.length).toEqual(2);
-  expect(result[0].name).toEqual("John");
-  expect(result[1].name).toEqual("Jane");
-});
-
-test("Error Handling with Malformed Query", async () => {
-  const query = "SELECT FROM table"; // intentionally malformed
-  await expect(executeSELECTQuery(query)).rejects.toThrow(
-    "Error executing query: Query parsing error: Invalid SELECT format"
-  );
-});
-
-test("Basic DISTINCT Usage", async () => {
-  const query = "SELECT DISTINCT age FROM student";
-  const result = await executeSELECTQuery(query);
-  expect(result).toEqual([
-    { age: "30" },
-    { age: "25" },
-    { age: "22" },
-    { age: "24" },
-  ]);
-});
-
-test("DISTINCT with Multiple Columns", async () => {
-  const query = "SELECT DISTINCT student_id, course FROM enrollment";
-  const result = await executeSELECTQuery(query);
-  // Expecting unique combinations of student_id and course
-  expect(result).toEqual([
-    { student_id: "1", course: "Mathematics" },
-    { student_id: "1", course: "Physics" },
-    { student_id: "2", course: "Chemistry" },
-    { student_id: "3", course: "Mathematics" },
-    { student_id: "5", course: "Biology" },
-  ]);
-});
-
-// Not a good test right now
-test("DISTINCT with WHERE Clause", async () => {
-  const query = 'SELECT DISTINCT course FROM enrollment WHERE student_id = "1"';
-  const result = await executeSELECTQuery(query);
-  // Expecting courses taken by student with ID 1
-  expect(result).toEqual([{ course: "Mathematics" }, { course: "Physics" }]);
-});
-
-test("DISTINCT with JOIN Operations", async () => {
-  const query =
-    "SELECT DISTINCT student.name FROM student INNER JOIN enrollment ON student.id = enrollment.student_id";
-  const result = await executeSELECTQuery(query);
-  // Expecting names of students who are enrolled in any course
-  expect(result).toEqual([
-    { "student.name": "John" },
-    { "student.name": "Jane" },
-    { "student.name": "Bob" },
-  ]);
-});
-
-test("DISTINCT with ORDER BY and LIMIT", async () => {
-  const query = "SELECT DISTINCT age FROM student ORDER BY age DESC LIMIT 2";
-  const result = await executeSELECTQuery(query);
-  // Expecting the two highest unique ages
-  expect(result).toEqual([{ age: "30" }, { age: "25" }]);
-});
-
-test("Execute SQL Query with LIKE Operator for Name", async () => {
-  const query = "SELECT name FROM student WHERE name LIKE '%Jane%'";
-  const result = await executeSELECTQuery(query);
-  // Expecting names containing 'Jane'
-  expect(result).toEqual([{ name: "Jane" }]);
-});
-
-test("Execute SQL Query with LIKE Operator and Wildcards", async () => {
-  const query = "SELECT name FROM student WHERE name LIKE 'J%'";
-  const result = await executeSELECTQuery(query);
-  // Expecting names starting with 'J'
-  expect(result).toEqual([{ name: "John" }, { name: "Jane" }]);
-});
-
-test("Execute SQL Query with LIKE Operator Case Insensitive", async () => {
-  const query = "SELECT name FROM student WHERE name LIKE '%bob%'";
-  const result = await executeSELECTQuery(query);
-  // Expecting names 'Bob' (case insensitive)
-  expect(result).toEqual([{ name: "Bob" }]);
-});
-
-test("Execute SQL Query with LIKE Operator and DISTINCT", async () => {
-  const query = "SELECT DISTINCT name FROM student WHERE name LIKE '%e%'";
-  const result = await executeSELECTQuery(query);
-  // Expecting unique names containing 'e'
-  expect(result).toEqual([{ name: "Jane" }, { name: "Alice" }]);
-});
-
-test("LIKE with ORDER BY and LIMIT", async () => {
-  const query =
-    "SELECT name FROM student WHERE name LIKE '%a%' ORDER BY name ASC LIMIT 2";
-  const result = await executeSELECTQuery(query);
-  // Expecting the first two names alphabetically that contain 'a'
-  expect(result).toEqual([{ name: "Alice" }, { name: "Jane" }]);
 });
