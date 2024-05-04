@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14471557&assignment_repo_type=AssignmentRepo)
 <h1 align="center">StylusDB SQL</h1>
 <p align="center">
 A SQL database engine written in JavaScript
@@ -9,6 +10,7 @@ A SQL database engine written in JavaScript
 This is the base repository for cohort members to follow the tutorial and send in their own StylusDB SQL implementations. You can refer to a complete implementation @ [ChakshuGautam/stylusdb-sql](https://github.com/ChakshuGautam/stylusdb-sql).
 
 Follow the steps given in the documentation to create your own implementation and make those tests pass.
+
 
 > **Disclaimer**:
 This database is for educational purposes only. It is not intended for production use. It is written ground up in JavaScript and is a great way to learn how databases work. You can find the tutorial in the [docs](./docs) directory.
